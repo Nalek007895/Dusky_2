@@ -36,15 +36,11 @@ const CustomersSchema = new Schema ({
         type: String,
         required: true
     },
-    sex: {
+    phone_number: {
         type: String,
         required: true
     },
-    date_of_birth: {
-        type: Date,
-        required: true
-    },
-    phone_number: {
+    email: {
         type: String,
         required: true
     },
@@ -52,8 +48,28 @@ const CustomersSchema = new Schema ({
         type: AddrssSchema,
         required: true
     },
-    email: {
+    date_of_birth: {
+        type: Date,
+        required: true
+    },
+    sex: {
         type: String,
+        required: true
+    },
+    username: {
+        type: String,
+        required: true
+    },
+    password: {
+        type: String,
+        required: true
+    },
+    occupation: { 
+        type: String,
+        required: true
+    },
+    income: {
+        type: Number,
         required: true
     }
 },

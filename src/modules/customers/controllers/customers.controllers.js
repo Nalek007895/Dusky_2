@@ -17,7 +17,8 @@ const CustomersControllers = {
         })
     },
     createCustomers: async (req, res) => {
-        const { first_name, last_name, sex, date_of_birth, phone_number, address, email } = req.body
+
+        const { first_name, last_name, phone_number, email, address, date_of_birth, sex, username, password, occupation, income } = req.body
         const created = await CustomersService.create({ first_name, last_name, sex, date_of_birth, phone_number, address, email })
 
         res.status(201).json({
